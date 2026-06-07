@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Miguel A. Constaín</title>
+    <!-- Fuentes tipográficas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Hojas de Estilos -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR FIJO -->
+    <header class="main-header" id="main-navbar">
+        <div class="header-container">
+            <!-- El logo inicia oculto por CSS y se activa con scroll -->
+            <div class="logo-container" id="logo-header">
+                <img src="/img/logo2.png" alt="Logo Miguel A. Constaín">
+            </div>
+
+            <!-- Menú de Escritorio (Centrado) -->
+            <nav class="nav-desktop">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <!-- Botón Hamburguesa (Móvil) -->
+            <button class="hamburger-btn" id="hamburger-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MENÚ MÓVIL DESPLEGABLE (OVERLAY FULLSCREEN) -->
+    <div class="nav-mobile-overlay" id="mobile-menu">
+        <!-- El logo solo aparece aquí dentro en versiones móviles -->
+        <img src="/img/logo2.png" alt="Logo Miguel A. Constaín" class="mobile-logo-top">
+
+        <nav class="nav-mobile-links">
+            <a href="#inicio" class="mobile-link">Inicio</a>
+            <a href="#servicios" class="mobile-link">Servicios</a>
+            <a href="#contacto" class="mobile-link">Contacto</a>
+        </nav>
+    </div>
+
+    <!-- SECCIÓN HERO (PORTADA PRINCIPAL) -->
+    <section class="hero-section" id="inicio">
+        <!-- CONTENIDO CENTRAL DE LA PORTADA -->
+        <main class="hero-content">
+            <p class="tag-doctor">Doctor</p>
+            <h1 class="title-name">Miguel A. Constaín</h1>
+            <p class="subtitle-specialties">Neurólogo – Epileptólogo – Neurofisiólogo</p>
+
+            <div class="info-details">
+                <p class="info-italic">Densitometría Ósea</p>
+                <p class="info-universities">Universidad Javeriana. McGill University Montreal</p>
+            </div>
+
+            <a href="#servicios" class="btn-services">
+                Nuestros Servicios <span class="arrow">↓</span>
+            </a>
+        </main>
+
+        <!-- INDICADOR DE SCROLL INFERIOR -->
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <span class="arrow-down">⌃</span>
+        </div>
+    </section>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/tu-numero" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Contacto por WhatsApp">
+        <svg viewBox="0 0 32 32">
+            <path
+                d="M16 2a13 13 0 0 0-11.4 19.2l-1.7 6.3 6.5-1.7A13 13 0 1 0 16 2zm6.9 18.5c-.3.8-1.5 1.5-2.1 1.6-.6.1-1.3.2-3.6-.7a12.2 12.2 0 0 1-5-4.4c-.6-.8-1-1.8-1-2.8 0-2 1-3 1.4-3.4.3-.3.8-.5 1.2-.5h.4c.3 0 .6 0 .9.7l1.2 3c.1.2.1.4 0 .6l-.5.6c-.2.2-.3.4-.1.7a7.7 7.7 0 0 0 2.8 3.5c.6.4 1 .6 1.4.4l.7-.7c.3-.3.6-.2 1 0l1.9.9c.4.2.6.3.7.5.1.3.1 1.1-.3 2z" />
+        </svg>
+    </a>
+
+<!-- SECCIÓN TECNOLOGÍA MÉDICA -->
+    <section class="tech-section">
+        <div class="tech-container">
+
+            <h2 class="tech-title">Tecnología Médica de Confianza</h2>
+            <p class="tech-description">
+                Trabajamos con equipos especializados de GE HealthCare y NIHON KOHDEN para la realización de nuestros
+                estudios diagnósticos.
+            </p>
+
+            <div class="brands-grid">
+                <!-- Tarjeta 1: Nihon Kohden -->
+                <div class="brand-card-wrapper">
+                    <div class="brand-card">
+                        <!-- Reemplaza src con la ruta de tu logo -->
+                        <img src="/img/Imagen1.png" alt="NIHON KOHDEN" class="brand-logo">
+                    </div>
+                    <span class="brand-label">NIHON KOHDEN</span>
+                </div>
+
+                <!-- Tarjeta 2: GE HealthCare -->
+                <div class="brand-card-wrapper">
+                    <div class="brand-card">
+                        <!-- Reemplaza src con la ruta de tu logo -->
+                        <img src="/img/Imagen2.png" alt="GE HealthCare" class="brand-logo">
+                    </div>
+                    <span class="brand-label">GE HEALTHCARE</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- SECCIÓN SERVICIOS -->
+    <section class="services-section" id="servicios">
+        <div class="services-container">
+
+            <!-- Título Principal de la Sección -->
+            <h2 class="services-main-title">
+                <nav>Nuestros Servicios</nav><br>
+                <span class="highlight-green"></span>
+            </h2>
+
+            <!-- GRILLA DE TARJETAS DE SERVICIOS -->
+            <div class="services-grid">
+
+                <!-- Tarjeta 1: Densitometría Ósea -->
+                <div class="service-card">
+                    <div class="card-header">
+                        <span class="badge badge-ge"> EQUIPO GE HEALTHCARE</span>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="/img/densiometria osea.jpg" alt="Equipo GE Healthcare">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Densitometría Ósea (DXA)</h3>
+                        <p class="card-text">Es un examen rápido y no invasivo, que utiliza tecnología digital precisa,
+                            ideal para la prevención y control de la salud ósea.</p>
+                    </div>
+                    <div class="card-footer">
+                        EQUIPO GE HEALTHCARE
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Electroencefalograma Digital -->
+                <div class="service-card">
+                    <div class="card-header">
+                        <span class="badge badge-ge">EQUIPO NIHON KOHDEN</span>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="/img/3primeros.jpg" alt="Equipo GE Healthcare">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Electroencefalograma Digital (EEG)</h3>
+                        <p class="card-text">Examen diagnóstico, indoloro y seguro, utilizado para registrar las ondas
+                            cerebrales, colocando electrodos en contacto con el cuero cabelludo. El registro del examen
+                            dura una hora.Registra ondas cerebrales colocando electrodos en contacto con el cuero
+                            cabelludo de forma indolora e inofensiva, con una duración del estudio de una hora.</p>
+                    </div>
+                    <div class="card-footer">
+                        EQUIPO NIHON KOHDEN
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Telemetría Video EEG -->
+                <div class="service-card">
+                    <div class="card-header">
+                        <span class="badge badge-ge">EQUIPO NIHON KOHDEN</span>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="/img/3primeros.jpg" alt="Equipo GE Healthcare">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Telemetría Video EEG</h3>
+                        <p class="card-text">Estudio especializado que combina el registro continuo de la actividad
+                            eléctrica cerebral (electroencefalograma) con una grabación de video en tiempo real.</p>
+                    </div>
+                    <div class="card-footer">
+                        EQUIPO NIHON KOHDEN
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: Polisomnografía -->
+                <div class="service-card">
+                    <div class="card-header">
+                        <span class="badge badge-nihon">NIHON KOHDEN</span>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="/img/3ultimos.jpg" alt="Equipo Nihon Kohden">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Polisomnografía</h3>
+                        <p class="card-text">Es un estudio del sueño, no invasivo, indoloro, que registra funciones
+                            corporales (actividad cerebral, respiración, oxigenación, función cardíaca, movimientos)
+                            durante la noche, registrando al paciente en video en tiempo real, para diagnosticar
+                            trastornos del sueño, principalmente apnea del sueño.</p>
+                    </div>
+                    <div class="card-footer">
+                        EQUIPO NIHON KOHDEN
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5: Electromiografía y Neuroconducciones -->
+                <div class="service-card">
+                    <div class="card-header">
+                        <span class="badge badge-nihon">NIHON KOHDEN</span>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="/img/3ultimos.jpg" alt="Equipo Nihon Kohden">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Electromiografía y<br>Neuroconducciones</h3>
+                        <p class="card-text">Prueba para estudiar el funcionamiento de los nervios periféricos y del
+                            músculo.</p>
+                    </div>
+                    <div class="card-footer">
+                        EQUIPO NIHON KOHDEN
+                    </div>
+                </div>
+
+                <!-- Tarjeta 6: Potenciales Evocados -->
+                <div class="service-card">
+                    <div class="card-header">
+                        <span class="badge badge-nihon">NIHON KOHDEN</span>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="/img/3ultimos.jpg" alt="Equipo Nihon Kohden">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Potenciales Evocados (Visuales – Auditivos)</h3>
+                        <p class="card-text">Exploran las vías nerviosas que llevan información desde el ojo y desde el
+                            oído hasta el cerebro.<strong>Visuales:</strong> Valoran el nervio óptico y la vía visual
+                            cerebral.<strong>Auditivos:</strong> Valoran el nervio auditivo o coclear de la audición y
+                            la vía cerebral auditiva.<strong>Electrorretinograma y Electrococleograma:</strong> Valoran
+                            la retina del ojo y la cóclea del oído.</p>
+                    </div>
+                    <div class="card-footer">
+                        EQUIPO NIHON KOHDEN
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <!-- SECCIÓN CONTACTO -->
+    <section class="contact-section" id="contacto">
+        <div class="contact-container">
+
+            <!-- BLOQUE IZQUIERDO: Información de contacto (Fondo Oscuro + Mapa integrado) -->
+            <div class="contact-info-block">
+                <p class="info-tag">INFORMACIÓN DE CONTACTO</p>
+
+                <div class="info-group">
+                    <h4>DIRECCIÓN</h4>
+                    <p class="address-highlight">carrera 3 #3-13</p>
+                    <p class="address-sub">Popayán – Cauca</p>
+                </div>
+
+                <div class="info-group">
+                    <h4>CELULAR Y WHATSAPP</h4>
+                    <p class="phone-highlight">3052247482</p>
+                </div>
+
+                <div class="info-group">
+                    <h4>HORARIO</h4>
+                    <p class="schedule-text">Lunes a Viernes 7:00 a.m. a 5:30 p.m.</p>
+                    <p class="schedule-text">Sábados 8:00 a.m. a 12:00 a.m.</p>
+                </div>
+
+                <!-- El mapa ahora vive dentro de la caja verde -->
+                <div class="contact-map-inline">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.1950129787324!2d-76.60527982527248!3d2.442004897536945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30030f640e70c1%3A0x7df1576de3413e1!2sCra.%203%20%233-13%2C%20Centro%2C%20Popay%C3%A1n%2C%20Cauca%2C%20Colombia!5e0!3m2!1ses-419!2ses!4v1780848587813!5m2!1ses-419!2ses"
+                        width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- BLOQUE DERECHO: Formulario de contacto (Fondo Claro) -->
+            <div class="contact-form-block">
+                <p class="form-tag">ESCRÍBANOS</p>
+                <h2 class="form-main-title">Formulario de Contacto</h2>
+
+                <form action="#" method="POST" class="main-form">
+                    <div class="input-container">
+                        <label for="form-name">Nombre completo</label>
+                        <input type="text" id="form-name" name="name" placeholder="Su nombre" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="form-email">Correo electrónico</label>
+                        <input type="email" id="form-email" name="email" placeholder="correo@ejemplo.com" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="form-message">Mensaje</label>
+                        <textarea id="form-message" name="message" maxlength="500"
+                            placeholder="Escriba su mensaje aquí..." required></textarea>
+                        <span class="char-counter" id="message-counter">0/500</span>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        Enviar Mensaje
+                        <svg class="send-icon" viewBox="0 0 24 24">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<footer class="main-footer">
+        <div class="footer-container">
+            
+            <div class="footer-column profile-col">
+                <div class="footer-logo-wrapper">
+                    <img src="/img/logo4 (1).png" alt="Miguel A. Constaín - Neurología" class="footer-main-logo">
+                </div>
+            </div>
+
+            <div class="footer-column navigation-col">
+                <h3>NAVEGACIÓN</h3>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-col">
+                <h3>CONTACTO</h3>
+                <p class="contact-info-item">carrera 3 #3-13, Popayán – Cauca</p>
+                <p class="contact-info-item phone-style">3052247482</p>
+                <p class="contact-info-item schedule-style">Lunes a Viernes 7:00 a.m. – 5:30 p.m.</p>
+                <p class="contact-info-item schedule-style">Sábados 8:00 a.m. – 12:00 a.m.</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="bottom-bar-container">
+                <p class="copyright-text">© 2026 Doctor Miguel A. Constaín. Todos los derechos reservados.</p>
+                <a href="https://wa.me/573052247482" target="_blank" class="whatsapp-footer-link">Contactar por WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Lógica JS -->
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
